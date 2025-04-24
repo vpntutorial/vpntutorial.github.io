@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html xml:lang="zh-CN" lang="zh-CN">
+
+<head>
+        <link rel="canonical" href="https://vpntutorial.github.io/news/article-103509.htm" />
+    <meta charset="utf-8">
+    <title>安卓平台上的科学上网利器：Shadowrocket使用详解与实践指南</title>
+        <meta name="description" content="随着全球互联网使用的多样化与分区政策的日益严格，越来越多的用户开始寻求科学上网的方法以突破信息封锁，获得更加自由的网络体验。在诸多工具中，Shadowrocket无疑是iOS用户的首选之一。但对于广大" />
+        <link rel="icon" href="/assets/website/img/clashagent/favicon.ico" type="image/x-icon"/>
+
+    <meta name="author" content="VPN教程订阅中文网">
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://vpntutorial.github.io/news/article-103509.htm" />
+    <meta property="og:site_name" content="VPN教程订阅中文网" />
+    <meta property="og:title" content="安卓平台上的科学上网利器：Shadowrocket使用详解与实践指南" />
+    <meta property="og:image" content="https://vpntutorial.github.io/uploads/20250106/a72532a23e668920a2f247f99ac2cd8f.webp" />
+        <meta property="og:release_date" content="2025-04-24T15:28:03" />
+    <meta property="og:updated_time" content="2025-04-24T15:28:03" />
+        <meta property="og:description" content="随着全球互联网使用的多样化与分区政策的日益严格，越来越多的用户开始寻求科学上网的方法以突破信息封锁，获得更加自由的网络体验。在诸多工具中，Shadowrocket无疑是iOS用户的首选之一。但对于广大" />
+        
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <meta name="applicable-device" content="pc,mobile" />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta name="robots" content="max-image-preview:large" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="安卓平台上的科学上网利器：Shadowrocket使用详解与实践指南">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="dns-prefetch" href="https:/www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googleadservices.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+    <link rel="dns-prefetch" href="https://cm.g.doubleclick.net">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="/assets/website/css/clashagent/css2.css" rel="stylesheet">
+    <link href="/assets/website/css/clashagent/all.min.css" rel="stylesheet">
+    <link href="/assets/website/css/clashagent/bootstrap-icons.css" rel="stylesheet">
+    <link href="/assets/website/css/clashagent/animate.min.css" rel="stylesheet">
+    <link href="/assets/website/css/clashagent/owl.carousel.min.css" rel="stylesheet">
+    <link href="/assets/website/css/clashagent/tempusdominus-bootstrap-4.min.css" rel="stylesheet">
+    <link href="/assets/website/css/clashagent/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/website/css/clashagent/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/website/css/G.css" />
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G7R1BJKJER"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-G7R1BJKJER');
+</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3332997411212854"
+     crossorigin="anonymous"></script>
+</head>
+
+<body data-page="detail">
+    <div class="container-xxl bg-white p-0">
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <div class="container-xxl position-relative p-0">
+                        <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
+                <a href="/" class="navbar-brand p-0 xcblog-blog-logo">
+                                        <span class="text-primary m-0">VPN教程</span>
+                                    </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0 pe-4">
+                                                <a href="/" class="nav-item nav-link">首页</a>
+                                                <a href="/paid-subscribe/" class="nav-item nav-link">推荐机场</a>
+                                                <a href="/news/" class="nav-item nav-link">新闻资讯</a>
+                                                <a href="/client.htm" class="nav-item nav-link">客户端</a>
+                                            </div>
+                </div>
+            </nav>
+            <div class="container-xxl py-5 bg-dark hero-header mb-5">
+                <div class="container text-center my-5 pt-5 pb-4">
+                    <h1 class="display-3 text-white mb-3 animated slideInDown">安卓平台上的科学上网利器：Shadowrocket使用详解与实践指南</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center text-uppercase">
+                            <li class="breadcrumb-item"><a href="/">首页</a></li>
+                            <li class="breadcrumb-item"><a href="/news/">新闻资讯</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">正文</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                                        <input type="hidden" id="share-website-info" data-name="Clash Node官网订阅站" data-url="https://clashnode.github.io">
+                <div class="xcblog-blog-detail">
+                    
+<p data-start="38" data-end="194" class="">随着全球互联网使用的多样化与分区政策的日益严格，越来越多的用户开始寻求科学上网的方法以突破信息封锁，获得更加自由的网络体验。在诸多工具中，<strong data-start="107" data-end="123">Shadowrocket</strong>无疑是iOS用户的首选之一。但对于广大的安卓用户而言，是否同样可以借助Shadowrocket这一强大的代理工具，享受到无拘无束的网络环境呢？</p>
+<p data-start="196" data-end="289" class="">本文将聚焦于安卓系统下的Shadowrocket及其替代方案，从基础原理、下载配置、使用技巧、到常见问题解决，为你全方位解析如何借助Shadowrocket打造高效、安全的科学上网体验。</p>
+<hr data-start="291" data-end="294" class="" style="">
+<h2 data-start="296" data-end="323" class="">一、Shadowrocket简介：远不止于iOS</h2>
+<p data-start="325" data-end="466" class=""><strong data-start="325" data-end="341">Shadowrocket</strong>最初是一款专为Apple iOS系统开发的代理客户端，功能强大，支持多种协议，如Socks5、Shadowsocks、HTTP/HTTPS代理等。通过灵活的规则设置，用户可以实现“按需上网”，例如某些网站通过代理访问，而国内网站则直连，避免资源浪费。</p>
+<p data-start="468" data-end="540" class="">但由于系统限制和政策原因，Shadowrocket在iOS上的获取门槛相对较高，这也促使不少安卓用户寻找替代方案或探索在安卓设备上使用的可能性。</p>
+<blockquote data-start="542" data-end="674">
+<p data-start="544" data-end="674" class="">尽管Shadowrocket本身并未官方支持安卓，但市面上已有多个功能相近的客户端，如<strong data-start="587" data-end="610">Shadowsocks-Android</strong>、<strong data-start="611" data-end="622">V2RayNG</strong>、<strong data-start="623" data-end="644">Clash for Android</strong>等，可以完美还原甚至超越Shadowrocket的使用体验。</p>
+</blockquote>
+<hr data-start="676" data-end="679" class="" style="">
+<h2 data-start="681" data-end="713" class="">二、Shadowrocket核心功能概览（以iOS为原型）</h2>
+<p data-start="715" data-end="754" class="">为了让安卓用户理解其工作原理，我们先来看看Shadowrocket的主要特性：</p>
+<h3 data-start="756" data-end="768" class="">1. 多协议支持</h3>
+<p data-start="770" data-end="796" class="">Shadowrocket原生支持多种代理协议，包括：</p>
+<ul data-start="797" data-end="872">
+<li data-start="797" data-end="814" class="" style="">
+<p data-start="799" data-end="814" class=""><strong data-start="799" data-end="814">Shadowsocks</strong></p>
+</li>
+<li data-start="815" data-end="827" class="" style="">
+<p data-start="817" data-end="827" class=""><strong data-start="817" data-end="827">Socks5</strong></p>
+</li>
+<li data-start="828" data-end="846" class="" style="">
+<p data-start="830" data-end="846" class=""><strong data-start="830" data-end="846">HTTP/HTTPS代理</strong></p>
+</li>
+<li data-start="847" data-end="872" class="" style="">
+<p data-start="849" data-end="872" class=""><strong data-start="849" data-end="872">Vmess/VLESS（部分变种版本）</strong></p>
+</li>
+</ul>
+<p data-start="874" data-end="910" class="">这意味着它可以兼容目前主流的VPN节点或代理服务，无需用户额外安装依赖。</p>
+<h3 data-start="912" data-end="925" class="">2. 高级规则设置</h3>
+<p data-start="927" data-end="945" class="">用户可以配置<strong data-start="933" data-end="941">分流规则</strong>，例如：</p>
+<ul data-start="946" data-end="998">
+<li data-start="946" data-end="968" class="" style="">
+<p data-start="948" data-end="968" class="">Google、YouTube 通过代理；</p>
+</li>
+<li data-start="969" data-end="982" class="" style="">
+<p data-start="971" data-end="982" class="">百度、淘宝 直接连接；</p>
+</li>
+<li data-start="983" data-end="998" class="" style="">
+<p data-start="985" data-end="998" class="">某些IP段始终阻止访问等。</p>
+</li>
+</ul>
+<p data-start="1000" data-end="1032" class="">这些规则通常以“ACL”或“自定义规则表”形式导入，灵活且强大。</p>
+<h3 data-start="1034" data-end="1047" class="">3. 性能与稳定性</h3>
+<p data-start="1049" data-end="1120" class="">Shadowrocket支持TCP与UDP全通道转发，适合视频、游戏、下载等多场景使用。内置测速功能可实时选择最快节点，最大限度提升上网体验。</p>
+<hr data-start="1122" data-end="1125" class="" style="">
+<h2 data-start="1127" data-end="1159" class="">三、安卓用户如何“变通”使用Shadowrocket功能？</h2>
+<h3 data-start="1161" data-end="1189" class="">1. Shadowrocket是否支持安卓系统？</h3>
+<p data-start="1191" data-end="1277" class="">官方答案是<strong data-start="1196" data-end="1201">否</strong>。Shadowrocket没有安卓版本，其开发者也并未移植该软件至Android平台。然而，我们可以通过下列<strong data-start="1255" data-end="1263">替代工具</strong>，实现相同甚至更丰富的功能：</p>
+<h4 data-start="1279" data-end="1291" class="">推荐替代应用：</h4>
+<ul data-start="1293" data-end="1457">
+<li data-start="1293" data-end="1352" class="" style="">
+<p data-start="1295" data-end="1352" class=""><strong data-start="1295" data-end="1318">Shadowsocks-Android</strong>：最接近Shadowrocket功能的开源工具，配置简单，稳定高效。</p>
+</li>
+<li data-start="1353" data-end="1410" class="" style="">
+<p data-start="1355" data-end="1410" class=""><strong data-start="1355" data-end="1366">V2RayNG</strong>：支持VMess、VLESS、Shadowsocks等多种协议，兼容主流V2Ray服务。</p>
+</li>
+<li data-start="1411" data-end="1457" class="" style="">
+<p data-start="1413" data-end="1457" class=""><strong data-start="1413" data-end="1434">Clash for Android</strong>：支持多协议混用，规则系统强大，适合进阶用户。</p>
+</li>
+</ul>
+<p data-start="1459" data-end="1498" class="">这些工具可以通过GitHub、第三方应用市场或技术博客提供的官方下载链接获取。</p>
+<hr data-start="1500" data-end="1503" class="" style="">
+<h2 data-start="1505" data-end="1536" class="">四、安卓下的“Shadowrocket”类应用下载与安装</h2>
+<p data-start="1538" data-end="1580" class="">以<strong data-start="1539" data-end="1562">Shadowsocks-Android</strong>为例，我们一步步介绍安装与使用过程：</p>
+<h3 data-start="1582" data-end="1593" class="">1. 安装步骤</h3>
+<ul data-start="1595" data-end="1823">
+<li data-start="1595" data-end="1719" class="" style="">
+<p data-start="1597" data-end="1719" class=""><strong data-start="1597" data-end="1615">方式一：通过GitHub下载</strong><br data-start="1615" data-end="1618">
+访问 <a data-start="1623" data-end="1709" rel="noopener" target="_new" class="" href="https://github.com/shadowsocks/shadowsocks-android">Shadowsocks for Android GitHub页面</a>，下载最新版APK。</p>
+</li>
+<li data-start="1723" data-end="1782" class="" style="">
+<p data-start="1725" data-end="1782" class=""><strong data-start="1725" data-end="1743">方式二：第三方平台（如酷安）</strong><br data-start="1743" data-end="1746">
+搜索“Shadowsocks”，找到评分高、更新活跃的版本进行下载。</p>
+</li>
+<li data-start="1784" data-end="1823" class="" style="">
+<p data-start="1786" data-end="1823" class="">安装时需允许“来自未知来源的应用”，安卓系统通常会提示是否授权，确认即可。</p>
+</li>
+</ul>
+<h3 data-start="1825" data-end="1836" class="">2. 添加配置</h3>
+<p data-start="1838" data-end="1856" class="">启动应用后，点击“+”添加代理配置：</p>
+<ul data-start="1858" data-end="1944">
+<li data-start="1858" data-end="1901" class="" style="">
+<p data-start="1860" data-end="1901" class="">选择类型：Shadowsocks / Vmess / Trojan（视客户端而定）</p>
+</li>
+<li data-start="1902" data-end="1922" class="" style="">
+<p data-start="1904" data-end="1922" class="">填入服务器地址、端口、加密方式、密码</p>
+</li>
+<li data-start="1923" data-end="1944" class="" style="">
+<p data-start="1925" data-end="1944" class="">可选项：UDP转发、自动测速、延迟检测</p>
+</li>
+</ul>
+<p data-start="1946" data-end="1965" class="">保存配置后，开启开关即可启动代理服务。</p>
+<hr data-start="1967" data-end="1970" class="" style="">
+<h2 data-start="1972" data-end="1989" class="">五、安卓端科学上网的高级用法</h2>
+<h3 data-start="1991" data-end="2004" class="">1. 导入订阅链接</h3>
+<p data-start="2006" data-end="2049" class="">类似Shadowrocket，安卓工具如V2RayNG、Clash也支持“订阅功能”：</p>
+<ul data-start="2051" data-end="2114">
+<li data-start="2051" data-end="2076" class="" style="">
+<p data-start="2053" data-end="2076" class="">打开订阅界面，粘贴订阅链接（通常由服务商提供）</p>
+</li>
+<li data-start="2077" data-end="2093" class="" style="">
+<p data-start="2079" data-end="2093" class="">系统会自动导入所有节点和规则</p>
+</li>
+<li data-start="2094" data-end="2114" class="" style="">
+<p data-start="2096" data-end="2114" class="">设置定时更新，确保配置不会过期或失效</p>
+</li>
+</ul>
+<h3 data-start="2116" data-end="2135" class="">2. 设置分流规则（规则文件）</h3>
+<ul data-start="2137" data-end="2259">
+<li data-start="2137" data-end="2200" class="" style="">
+<p data-start="2139" data-end="2200" class="">Clash for Android 提供“自定义规则”功能，用户可以使用类似于 Shadowrocket 的策略路由配置；</p>
+</li>
+<li data-start="2201" data-end="2230" class="" style="">
+<p data-start="2203" data-end="2230" class="">可下载已有的规则集（如ACL4SSR），覆盖默认策略；</p>
+</li>
+<li data-start="2231" data-end="2259" class="" style="">
+<p data-start="2233" data-end="2259" class="">根据需要自定义黑白名单，提高科学上网的效率和稳定性。</p>
+</li>
+</ul>
+<h3 data-start="2261" data-end="2280" class="">3. 配合局域网共享与其它功能</h3>
+<p data-start="2282" data-end="2292" class="">安卓工具通常也支持：</p>
+<ul data-start="2294" data-end="2394">
+<li data-start="2294" data-end="2325" class="" style="">
+<p data-start="2296" data-end="2325" class="">局域网代理共享：使同一Wi-Fi下的其他设备也能科学上网；</p>
+</li>
+<li data-start="2326" data-end="2365" class="" style="">
+<p data-start="2328" data-end="2365" class="">DNS加密支持：使用DNS over HTTPS/TLS，防止DNS泄漏；</p>
+</li>
+<li data-start="2366" data-end="2394" class="" style="">
+<p data-start="2368" data-end="2394" class="">搭配Tasker或快捷方式实现自动化开启/关闭代理。</p>
+</li>
+</ul>
+<hr data-start="2396" data-end="2399" class="" style="">
+<h2 data-start="2401" data-end="2417" class="">六、常见问题解答（FAQ）</h2>
+<h3 data-start="2419" data-end="2445" class="">Q1：为什么我配置后仍无法访问Google？</h3>
+<ul data-start="2447" data-end="2551">
+<li data-start="2447" data-end="2476" class="" style="">
+<p data-start="2449" data-end="2476" class="">检查节点信息是否正确（IP、端口、密码、加密方式等）；</p>
+</li>
+<li data-start="2477" data-end="2487" class="" style="">
+<p data-start="2479" data-end="2487" class="">确保订阅未过期；</p>
+</li>
+<li data-start="2488" data-end="2519" class="" style="">
+<p data-start="2490" data-end="2519" class="">更换协议尝试（如从Shadowsocks换成Vmess）；</p>
+</li>
+<li data-start="2520" data-end="2551" class="" style="">
+<p data-start="2522" data-end="2551" class="">某些运营商对VPN封锁严重，建议使用443端口或伪装协议。</p>
+</li>
+</ul>
+<h3 data-start="2553" data-end="2582" class="">Q2：安卓上哪个应用最像Shadowrocket？</h3>
+<ul data-start="2584" data-end="2696">
+<li data-start="2584" data-end="2621" class="" style="">
+<p data-start="2586" data-end="2621" class="">如果追求简单配置，推荐<strong data-start="2597" data-end="2620">Shadowsocks-Android</strong>；</p>
+</li>
+<li data-start="2622" data-end="2660" class="" style="">
+<p data-start="2624" data-end="2660" class="">如果需求复杂、追求灵活，推荐<strong data-start="2638" data-end="2659">Clash for Android</strong>；</p>
+</li>
+<li data-start="2661" data-end="2696" class="" style="">
+<p data-start="2663" data-end="2696" class="">如果使用的是V2Ray协议服务，则选<strong data-start="2681" data-end="2692">V2RayNG</strong>最合适。</p>
+</li>
+</ul>
+<h3 data-start="2698" data-end="2715" class="">Q3：使用这些工具安全吗？</h3>
+<p data-start="2717" data-end="2762" class="">只要使用正规来源下载的客户端，并选择信誉良好的代理服务商，科学上网是相对安全的。但需注意：</p>
+<ul data-start="2763" data-end="2809">
+<li data-start="2763" data-end="2773" class="" style="">
+<p data-start="2765" data-end="2773" class="">不从事非法活动；</p>
+</li>
+<li data-start="2774" data-end="2784" class="" style="">
+<p data-start="2776" data-end="2784" class="">不传播敏感信息；</p>
+</li>
+<li data-start="2785" data-end="2809" class="" style="">
+<p data-start="2787" data-end="2809" class="">避免在敏感网络环境（如工作单位）长时间使用。</p>
+</li>
+</ul>
+<hr data-start="2811" data-end="2814" class="" style="">
+<h2 data-start="2816" data-end="2838" class="">七、总结与建议：安卓用户的自由上网之道</h2>
+<p data-start="2840" data-end="3009" class="">虽然Shadowrocket本身并没有登陆安卓平台，但这并不意味着安卓用户就与高质量科学上网体验无缘。得益于开源社区与技术发展的推动，如<strong data-start="2908" data-end="2931">Shadowsocks-Android</strong>、<strong data-start="2932" data-end="2943">V2RayNG</strong>、<strong data-start="2944" data-end="2965">Clash for Android</strong>等工具不仅填补了Shadowrocket的空缺，还在功能、性能与扩展性上实现了全面超越。</p>
+<p data-start="3011" data-end="3117" class="">选择哪款工具，应根据你的代理协议类型、使用需求、设备配置来决定——如果你是入门用户，Shadowsocks-Android最易上手；如果你是中高级用户，Clash for Android的灵活策略将带来无限可能。</p>
+<hr data-start="3119" data-end="3122" class="">
+<h3 data-start="3124" data-end="3133" class="">精彩点评：</h3>
+<blockquote data-start="3135" data-end="3268" data-is-last-node="" data-is-only-node="">
+<p data-start="3137" data-end="3268" class=""><strong data-start="3137" data-end="3268" data-is-last-node="">在安卓系统的科学上网世界里，Shadowrocket并不是孤军奋战，而是激发了无数优秀工具的诞生。真正的互联网自由，不在于你用的工具叫“Shadowrocket”，而在于你是否掌握了打开世界的钥匙。选对工具，拥抱开放，安卓用户同样可以驭网如风，畅游全球。</strong></p>
+</blockquote>                </div>
+                <div class="clearfix"></div>
+                <div class="col-md-12 mt-5">
+                                        <p>上一个：<a href="/news/article-103508.htm">深度解析Shadowrocket的历史与发展：从工具到网络自由的桥梁</a></p>
+                                    </div>
+                                    </div>
+                    <div class="col-md-3">
+                        <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">热门文章</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2"><a href="/news/article-103509.htm" title="安卓平台上的科学上网利器：Shadowrocket使用详解与实践指南">安卓平台上的科学上网利器：Shadowrocket使用详解与实践指南</a></li>
+                        <li class="py-2"><a href="/news/article-103508.htm" title="深度解析Shadowrocket的历史与发展：从工具到网络自由的桥梁">深度解析Shadowrocket的历史与发展：从工具到网络自由的桥梁</a></li>
+                    </ul>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">归纳</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">2</span> <a href="/date/2025-04/" title="2025-04 归档">2025-04</a></h4>
+            </li>
+                    </ul>
+    </div>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                                            <p>
+                                                <a href="/">首页</a> |
+                                                <a href="/paid-subscribe/">推荐机场</a> |
+                                                <a href="/news/">新闻资讯</a> |
+                                                <a href="/client.htm">客户端</a> |
+                                                <a href="/about-us.htm">关于我们</a> |
+                        <a href="/disclaimer.htm">免责申明</a> |
+                        <a href="/privacy.htm">隐私申明</a> |
+                        <a href="/sitemap.xml">网站地图</a>
+                    </p>
+                        <p class="text-white-50 f-15 mb-0">
+                            <a href="/">VPN教程订阅中文网</a> 版权所有 Powered by WordPress
+                        </p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="/">Home</a>
+                            <a href="#">Cookies</a>
+                            <a href="#">Help</a>
+                            <a href="#">FQAs</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <script src="/assets/website/js/frontend/clashagent/jquery-3.6.0.min.js"></script>
+    <script src="/assets/website/js/frontend/clashagent/owl.carousel.min.js"></script>
+    <script src="/assets/website/js/frontend/clashagent/main.js"></script>
+    <script src="/assets/website/js/frontend/clashagent/rocket-loader.min.js"></script>
+    <script src="https://www.freeclashnode.com/assets/js/frontend/invite-url.js"></script>
+    <script src="/assets/website/js/frontend/G.js"></script>
+    </div>
+</body>
+
+</html>
