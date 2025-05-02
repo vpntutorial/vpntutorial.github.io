@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html xml:lang="zh-CN" lang="zh-CN">
+
+<head>
+        <link rel="canonical" href="https://vpntutorial.github.io/news/article-107368.htm" />
+    <meta charset="utf-8">
+    <title>安卓设备上使用V2Ray的终极指南：从安装到配置全面解析</title>
+        <meta name="description" content="在当今互联网环境中，许多用户在日常上网中都面临着各种限制与隐私保护的需求，尤其是在某些地区，网络访问受到严格审查。为了解决这一问题，V2Ray作为一种非常强大的代理工具，凭借其灵活的配置和多种协议的支" />
+        <link rel="icon" href="/assets/website/img/clashagent/favicon.ico" type="image/x-icon"/>
+
+    <meta name="author" content="VPN教程订阅中文网">
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://vpntutorial.github.io/news/article-107368.htm" />
+    <meta property="og:site_name" content="VPN教程订阅中文网" />
+    <meta property="og:title" content="安卓设备上使用V2Ray的终极指南：从安装到配置全面解析" />
+    <meta property="og:image" content="https://vpntutorial.github.io/uploads/20250106/bf289d4be2b05a00ea23d8577ca2e71f.webp" />
+        <meta property="og:release_date" content="2025-04-29T08:03:39" />
+    <meta property="og:updated_time" content="2025-04-29T08:03:39" />
+        <meta property="og:description" content="在当今互联网环境中，许多用户在日常上网中都面临着各种限制与隐私保护的需求，尤其是在某些地区，网络访问受到严格审查。为了解决这一问题，V2Ray作为一种非常强大的代理工具，凭借其灵活的配置和多种协议的支" />
+        
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <meta name="applicable-device" content="pc,mobile" />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta name="robots" content="max-image-preview:large" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="安卓设备上使用V2Ray的终极指南：从安装到配置全面解析">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="dns-prefetch" href="https:/www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googleadservices.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+    <link rel="dns-prefetch" href="https://cm.g.doubleclick.net">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="/assets/website/css/clashagent/css2.css" rel="stylesheet">
+    <link href="/assets/website/css/clashagent/all.min.css" rel="stylesheet">
+    <link href="/assets/website/css/clashagent/bootstrap-icons.css" rel="stylesheet">
+    <link href="/assets/website/css/clashagent/animate.min.css" rel="stylesheet">
+    <link href="/assets/website/css/clashagent/owl.carousel.min.css" rel="stylesheet">
+    <link href="/assets/website/css/clashagent/tempusdominus-bootstrap-4.min.css" rel="stylesheet">
+    <link href="/assets/website/css/clashagent/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/website/css/clashagent/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/website/css/G.css" />
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G7R1BJKJER"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-G7R1BJKJER');
+</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3332997411212854"
+     crossorigin="anonymous"></script>
+</head>
+
+<body data-page="detail">
+    <div class="container-xxl bg-white p-0">
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <div class="container-xxl position-relative p-0">
+                        <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
+                <a href="/" class="navbar-brand p-0 xcblog-blog-logo">
+                                        <span class="text-primary m-0">VPN教程</span>
+                                    </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0 pe-4">
+                                                <a href="/" class="nav-item nav-link">首页</a>
+                                                <a href="/paid-subscribe/" class="nav-item nav-link">推荐机场</a>
+                                                <a href="/news/" class="nav-item nav-link">新闻资讯</a>
+                                                <a href="/client.htm" class="nav-item nav-link">客户端</a>
+                                            </div>
+                </div>
+            </nav>
+            <div class="container-xxl py-5 bg-dark hero-header mb-5">
+                <div class="container text-center my-5 pt-5 pb-4">
+                    <h1 class="display-3 text-white mb-3 animated slideInDown">安卓设备上使用V2Ray的终极指南：从安装到配置全面解析</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center text-uppercase">
+                            <li class="breadcrumb-item"><a href="/">首页</a></li>
+                            <li class="breadcrumb-item"><a href="/news/">新闻资讯</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">正文</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                                        <input type="hidden" id="share-website-info" data-name="Clash Node官网订阅站" data-url="https://clashnode.github.io">
+                <div class="xcblog-blog-detail xcblog-blog-detail-defined">
+                    
+<p data-start="32" data-end="166" class="">在当今互联网环境中，许多用户在日常上网中都面临着各种限制与隐私保护的需求，尤其是在某些地区，网络访问受到严格审查。为了解决这一问题，V2Ray作为一种非常强大的代理工具，凭借其灵活的配置和多种协议的支持，成为了许多人绕过网络限制、提高上网速度和确保隐私安全的首选工具。</p>
+<p data-start="168" data-end="247" class="">本文将深入介绍如何在安卓设备上安装和配置V2Ray，帮助你实现自由、安全、快速的网络体验。无论你是技术新手还是资深用户，都能从中找到有效的配置技巧和使用心得。</p>
+<h2 data-start="249" data-end="254" class="">目录</h2>
+<ol data-start="256" data-end="358">
+<li data-start="256" data-end="268" class="">
+<p data-start="259" data-end="268" class="">什么是V2Ray？</p>
+</li>
+<li data-start="269" data-end="282" class="">
+<p data-start="272" data-end="282" class="">V2Ray的主要特点</p>
+</li>
+<li data-start="283" data-end="301" class="">
+<p data-start="286" data-end="301" class="">如何在安卓设备上安装V2Ray</p>
+</li>
+<li data-start="302" data-end="315" class="">
+<p data-start="305" data-end="315" class="">V2Ray的配置步骤</p>
+</li>
+<li data-start="316" data-end="334" class="">
+<p data-start="319" data-end="334" class="">如何测试V2Ray是否正常工作</p>
+</li>
+<li data-start="335" data-end="349" class="">
+<p data-start="338" data-end="349" class="">常见问题解答（FAQ）</p>
+</li>
+<li data-start="350" data-end="358" class="">
+<p data-start="353" data-end="358" class="">总结与建议</p>
+</li>
+</ol>
+<h2 data-start="360" data-end="375" class="">1. 什么是V2Ray？</h2>
+<p data-start="377" data-end="511" class="">V2Ray是一个开源的网络代理工具，它是V2Ray项目的核心，致力于提供稳定、安全、高效的网络代理服务。它支持多种协议（如VMess、Shadowsocks、VLess等），并通过灵活的配置和多种传输方式，帮助用户实现科学上网、提高网络速度、保证上网的隐私性与安全性。</p>
+<p data-start="513" data-end="614" class="">V2Ray的优势在于其强大的定制性，用户可以根据需求选择合适的协议、节点和传输方式，极大地提高了灵活性和稳定性。它不仅适用于PC端，也支持安卓设备，用户可以通过安装客户端在安卓系统上实现流畅的网络体验。</p>
+<h2 data-start="616" data-end="632" class="">2. V2Ray的主要特点</h2>
+<h3 data-start="634" data-end="643" class="">多协议支持</h3>
+<p data-start="645" data-end="780" class="">V2Ray支持多种协议，如VMess、VLess、Shadowsocks等。每种协议都有其独特的优势，用户可以根据不同的网络环境和需求进行选择。例如，VMess协议具有更高的加密性，适合隐私保护需求；而Shadowsocks则因其较轻量的特性，适用于一般的日常翻墙需求。</p>
+<h3 data-start="782" data-end="790" class="">灵活性高</h3>
+<p data-start="792" data-end="914" class="">V2Ray的一个显著特点是它极高的灵活性。用户可以根据自己的需求，选择不同的传输方式（如TCP、WebSocket、gRPC等）和节点配置。对于一些高端用户，V2Ray还支持自定义配置文件，使得他们能够针对特定的网络环境进行优化，达到最佳效果。</p>
+<h3 data-start="916" data-end="926" class="">强大的兼容性</h3>
+<p data-start="928" data-end="1033" class="">V2Ray不仅支持Android、Windows、MacOS、Linux等多个平台，还能够兼容多种网络环境。在安卓设备上，V2Ray能够与其他网络工具（如VPN、代理等）无缝配合，确保网络访问的稳定性和安全性。</p>
+<h3 data-start="1035" data-end="1046" class="">安全与隐私保护</h3>
+<p data-start="1048" data-end="1142" class="">V2Ray通过多种加密算法保证用户的数据传输安全，避免在使用公共Wi-Fi等不安全网络时泄露敏感信息。此外，V2Ray还支持伪装传输，可以让用户更好地隐藏自己的网络行为，进一步提升匿名性。</p>
+<h2 data-start="1144" data-end="1165" class="">3. 如何在安卓设备上安装V2Ray</h2>
+<p data-start="1167" data-end="1212" class="">安装V2Ray并不复杂，只需要通过以下步骤，用户就能在安卓设备上成功配置和使用V2Ray。</p>
+<h3 data-start="1214" data-end="1233" class="">1. 下载安装V2Ray客户端</h3>
+<p data-start="1235" data-end="1296" class="">V2Ray在安卓平台上的客户端通常是v2rayNG，这是一个界面友好的V2Ray客户端，专为安卓用户设计。以下是安装步骤：</p>
+<ul data-start="1298" data-end="1450">
+<li data-start="1298" data-end="1353" class="">
+<p data-start="1300" data-end="1353" class=""><strong data-start="1300" data-end="1319">访问Google Play商店</strong>：直接在Google Play商店搜索“v2rayNG”并下载安装。</p>
+</li>
+<li data-start="1354" data-end="1450" class="">
+<p data-start="1356" data-end="1450" class=""><strong data-start="1356" data-end="1379">使用GitHub Releases页面</strong>：如果你无法在Google Play商店找到该应用，也可以访问V2Ray的GitHub Releases页面下载最新的APK文件进行手动安装。</p>
+</li>
+</ul>
+<p data-start="1452" data-end="1502" class="">安装过程非常简单，跟随提示完成即可。如果你遇到安装权限问题，只需要在设置中开启安装第三方应用的权限。</p>
+<h3 data-start="1504" data-end="1518" class="">2. 配置V2Ray</h3>
+<p data-start="1520" data-end="1558" class="">安装完成后，V2Ray的配置是确保工具正常运行的关键。以下是详细的配置步骤：</p>
+<h4 data-start="1560" data-end="1583" class="">2.1 创建与编辑V2Ray配置文件</h4>
+<ul data-start="1585" data-end="1867">
+<li data-start="1585" data-end="1619" class="">
+<p data-start="1587" data-end="1619" class=""><strong data-start="1587" data-end="1602">启动v2rayNG应用</strong>：打开安装好的v2rayNG应用。</p>
+</li>
+<li data-start="1620" data-end="1867" class="">
+<p data-start="1622" data-end="1672" class=""><strong data-start="1622" data-end="1633">添加服务器信息</strong>：点击菜单按钮，选择“服务器”选项，然后点击“添加服务器”按钮，输入以下信息：</p>
+<ul data-start="1675" data-end="1867">
+<li data-start="1675" data-end="1732" class="">
+<p data-start="1677" data-end="1732" class=""><strong data-start="1677" data-end="1699">地址（Server Address）</strong>：填写你所使用的V2Ray服务器地址（通常由你的服务提供商提供）。</p>
+</li>
+<li data-start="1735" data-end="1785" class="">
+<p data-start="1737" data-end="1785" class=""><strong data-start="1737" data-end="1749">端口（Port）</strong>：填写V2Ray服务的端口（默认为10086等，具体由服务提供商提供）。</p>
+</li>
+<li data-start="1788" data-end="1828" class="">
+<p data-start="1790" data-end="1828" class=""><strong data-start="1790" data-end="1804">用户ID（UUID）</strong>：填写一个唯一的用户ID，通常由服务提供商提供。</p>
+</li>
+<li data-start="1831" data-end="1867" class="">
+<p data-start="1833" data-end="1867" class=""><strong data-start="1833" data-end="1844">额外ID等信息</strong>：根据你的需求和服务提供商的配置信息进行填写。</p>
+</li>
+</ul>
+</li>
+</ul>
+<h4 data-start="1869" data-end="1887" class="">2.2 选择协议与其他设置</h4>
+<p data-start="1889" data-end="1916" class="">在“服务器”配置中，用户可以选择协议。常见的协议包括：</p>
+<ul data-start="1917" data-end="1991">
+<li data-start="1917" data-end="1954" class="">
+<p data-start="1919" data-end="1954" class=""><strong data-start="1919" data-end="1930">VMess协议</strong>：适合需要较高隐私保护的用户，支持多种加密方式。</p>
+</li>
+<li data-start="1955" data-end="1991" class="">
+<p data-start="1957" data-end="1991" class=""><strong data-start="1957" data-end="1974">Shadowsocks协议</strong>：适合日常翻墙使用，轻量级且稳定。</p>
+</li>
+</ul>
+<p data-start="1993" data-end="2050" class="">如果需要伪装传输，可以选择不同的传输方案，如WebSocket、gRPC等，这将进一步提高你连接的隐蔽性和安全性。</p>
+<h4 data-start="2052" data-end="2071" class="">2.3 保存配置并连接服务器</h4>
+<p data-start="2073" data-end="2151" class="">完成服务器配置后，点击“保存”按钮。返回应用的主页，找到刚才保存的服务器，点击连接按钮。此时，你的设备应该就能够成功连接到V2Ray服务器，并开始科学上网。</p>
+<p data-start="2153" data-end="2201" class="">如果在连接过程中遇到问题，可以尝试切换到“分流模式”进行连接，这对于不同的网络环境有时会更有效。</p>
+<h2 data-start="2203" data-end="2224" class="">4. 如何测试V2Ray是否正常工作</h2>
+<p data-start="2226" data-end="2272" class="">一旦成功连接到V2Ray服务器，接下来需要测试V2Ray是否能够正常工作。常见的测试方法有：</p>
+<ul data-start="2274" data-end="2399">
+<li data-start="2274" data-end="2336" class="">
+<p data-start="2276" data-end="2336" class=""><strong data-start="2276" data-end="2287">访问被墙的网站</strong>：例如，尝试访问YouTube、Google等被限制的网站。如果成功打开，说明V2Ray正常工作。</p>
+</li>
+<li data-start="2337" data-end="2399" class="">
+<p data-start="2339" data-end="2399" class=""><strong data-start="2339" data-end="2362">使用Ping和Traceroute工具</strong>：这些工具可以帮助你检测到V2Ray是否成功建立了连接，并且访问速度如何。</p>
+</li>
+</ul>
+<p data-start="2401" data-end="2448" class="">如果你能够顺畅地访问全球互联网，而没有遇到任何连接问题，那么说明V2Ray配置成功，运行正常。</p>
+<h2 data-start="2450" data-end="2467" class="">5. 常见问题解答（FAQ）</h2>
+<h3 data-start="2469" data-end="2485" class="">问：V2Ray是否必要？</h3>
+<p data-start="2487" data-end="2577" class=""><strong data-start="2487" data-end="2492">答</strong>：如果你需要访问被限制或屏蔽的网站，或者需要更高的上网隐私，V2Ray无疑是一个非常合适的工具。它能够绕过地理封锁、网络审查，同时加密传输内容，保护你的上网行为不被追踪。</p>
+<h3 data-start="2579" data-end="2601" class="">问：使用V2Ray会消耗更多流量吗？</h3>
+<p data-start="2603" data-end="2705" class=""><strong data-start="2603" data-end="2608">答</strong>：V2Ray作为一个代理工具，确实会在传输过程中消耗一定的额外流量，特别是当你使用较高加密级别时。但总体来说，流量消耗并不会远超普通上网，具体使用情况还取决于你访问的内容类型，如视频流、网页等。</p>
+<h3 data-start="2707" data-end="2728" class="">问：如何提高V2Ray的连接速度？</h3>
+<p data-start="2730" data-end="2809" class=""><strong data-start="2730" data-end="2735">答</strong>：连接速度与多个因素有关，如选择的节点、服务器的延迟等。你可以尝试更换服务器节点，选择延迟较低的节点，或使用V2Ray提供的负载均衡功能来提高速度。</p>
+<h3 data-start="2811" data-end="2834" class="">问：如何解决V2Ray连接失败的问题？</h3>
+<p data-start="2836" data-end="2907" class=""><strong data-start="2836" data-end="2841">答</strong>：首先检查网络连接是否正常，确保V2Ray的服务器地址、端口等配置正确。如果问题依旧，尝试更换节点或更新V2Ray客户端到最新版本。</p>
+<h2 data-start="2909" data-end="2920" class="">6. 总结与建议</h2>
+<p data-start="2922" data-end="3021" class="">通过本文的详细介绍，相信你已经掌握了如何在安卓设备上安装和配置V2Ray的方法。V2Ray作为一款强大的网络代理工具，不仅能够帮助用户实现科学上网，还能有效保护个人隐私，提升网络访问的安全性和速度。</p>
+<p data-start="3023" data-end="3131" class="">建议用户在使用V2Ray时，定期检查服务器状态，确保节点信息的准确性，并选择合适的协议和传输方式，以优化使用体验。如果在配置过程中遇到任何问题，参考常见问题解答（FAQ）或求助于相关技术社区，都是解决问题的有效途径。</p>
+<p data-start="3133" data-end="3216" class="">V2Ray的潜力不仅仅限于绕过网络封锁，它还可以帮助你在全球范围内享受更自由、更安全的网络环境。希望通过本文，你能够充分利用V2Ray的强大功能，享受畅快的网络体验。</p>                </div>
+                <div class="clearfix"></div>
+                <div class="col-md-12 mt-5">
+                                        <p>上一个：<a href="/news/article-106168.htm">iOS是否支持VLESS协议？全面解析与配置指南</a></p>
+                                        <p>下一个：<a href="/news/article-107372.htm">艾特路由器科学上网全面指南：轻松实现网络自由</a></p>
+                                    </div>
+                                    </div>
+                    <div class="col-md-3">
+                        <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">热门文章</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2"><a href="/news/article-103901.htm" title="安卓9设备用户必看：v2rayNG使用全指南（下载安装、配置详解与常见问题答疑）">安卓9设备用户必看：v2rayNG使用全指南（下载安装、配置详解与常见问题答疑）</a></li>
+                        <li class="py-2"><a href="/news/article-104785.htm" title="全面解析安卓手机Clash订阅价格：选择适合你的VPN服务">全面解析安卓手机Clash订阅价格：选择适合你的VPN服务</a></li>
+                        <li class="py-2"><a href="/news/article-106168.htm" title="iOS是否支持VLESS协议？全面解析与配置指南">iOS是否支持VLESS协议？全面解析与配置指南</a></li>
+                        <li class="py-2"><a href="/news/article-108937.htm" title="下载宝安装V2Ray全攻略：一步步教你轻松搭建私人网络">下载宝安装V2Ray全攻略：一步步教你轻松搭建私人网络</a></li>
+                        <li class="py-2"><a href="/news/article-109767.htm" title="金钥匙V科学上网：在百度云中的全面应用与配置指南">金钥匙V科学上网：在百度云中的全面应用与配置指南</a></li>
+                        <li class="py-2"><a href="/news/article-108113.htm" title="完全指南：如何在美国使用 Shadowrocket 及其 ID 设置">完全指南：如何在美国使用 Shadowrocket 及其 ID 设置</a></li>
+                        <li class="py-2"><a href="/news/article-105343.htm" title="全面指南：2020年免费V2Ray节点订阅与使用技巧解析">全面指南：2020年免费V2Ray节点订阅与使用技巧解析</a></li>
+                        <li class="py-2"><a href="/news/article-106167.htm" title="深度解析SSR：它真的算是科学上网工具吗？">深度解析SSR：它真的算是科学上网工具吗？</a></li>
+                        <li class="py-2"><a href="/news/article-105342.htm" title="深度解析Clash支持的网络协议：如何选择最合适的代理协议">深度解析Clash支持的网络协议：如何选择最合适的代理协议</a></li>
+                        <li class="py-2"><a href="/news/article-108936.htm" title="Opera浏览器与科学上网：全面解析与使用指南">Opera浏览器与科学上网：全面解析与使用指南</a></li>
+                    </ul>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">归纳</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">4</span> <a href="/date/2025-05/" title="2025-05 归档">2025-05</a></h4>
+            </li>
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">14</span> <a href="/date/2025-04/" title="2025-04 归档">2025-04</a></h4>
+            </li>
+                    </ul>
+    </div>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                                            <p>
+                                                <a href="/">首页</a> |
+                                                <a href="/paid-subscribe/">推荐机场</a> |
+                                                <a href="/news/">新闻资讯</a> |
+                                                <a href="/client.htm">客户端</a> |
+                                                <a href="/about-us.htm">关于我们</a> |
+                        <a href="/disclaimer.htm">免责申明</a> |
+                        <a href="/privacy.htm">隐私申明</a> |
+                        <a href="/sitemap.xml">网站地图</a>
+                    </p>
+                        <p class="text-white-50 f-15 mb-0">
+                            <a href="/">VPN教程订阅中文网</a> 版权所有 Powered by WordPress
+                        </p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="/">Home</a>
+                            <a href="#">Cookies</a>
+                            <a href="#">Help</a>
+                            <a href="#">FQAs</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <script src="/assets/website/js/frontend/clashagent/jquery-3.6.0.min.js"></script>
+    <script src="/assets/website/js/frontend/clashagent/owl.carousel.min.js"></script>
+    <script src="/assets/website/js/frontend/clashagent/main.js"></script>
+    <script src="/assets/website/js/frontend/clashagent/rocket-loader.min.js"></script>
+    <script src="https://www.freeclashnode.com/assets/js/frontend/invite-url.js"></script>
+    <script src="/assets/website/js/frontend/G.js"></script>
+    </div>
+</body>
+
+</html>
