@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html xml:lang="zh-CN" lang="zh-CN">
+
+<head>
+        <link rel="canonical" href="https://vpntutorial.github.io/news/article-112744.htm" />
+    <meta charset="utf-8">
+    <title>深度解析Shadowrocket分应用功能及使用技巧：优化你的网络体验</title>
+        <meta name="description" content="在当今的互联网时代，随着各类信息技术的发展和日益严格的网络监管，越来越多的用户开始寻求能够突破网络限制的工具。Shadowrocket作为一款功能强大的科学上网工具，特别在iOS平台上受到广泛的欢迎。" />
+        <link rel="icon" href="/assets/website/img/clashagent/favicon.ico" type="image/x-icon"/>
+
+    <meta name="author" content="VPN教程订阅中文网">
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://vpntutorial.github.io/news/article-112744.htm" />
+    <meta property="og:site_name" content="VPN教程订阅中文网" />
+    <meta property="og:title" content="深度解析Shadowrocket分应用功能及使用技巧：优化你的网络体验" />
+    <meta property="og:image" content="https://vpntutorial.github.io/uploads/20250106/ebf4065a287e775a7fcb519d32403311.webp" />
+        <meta property="og:release_date" content="2025-05-07T08:55:16" />
+    <meta property="og:updated_time" content="2025-05-07T08:55:16" />
+        <meta property="og:description" content="在当今的互联网时代，随着各类信息技术的发展和日益严格的网络监管，越来越多的用户开始寻求能够突破网络限制的工具。Shadowrocket作为一款功能强大的科学上网工具，特别在iOS平台上受到广泛的欢迎。" />
+        
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <meta name="applicable-device" content="pc,mobile" />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta name="robots" content="max-image-preview:large" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="深度解析Shadowrocket分应用功能及使用技巧：优化你的网络体验">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="dns-prefetch" href="https:/www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googleadservices.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+    <link rel="dns-prefetch" href="https://cm.g.doubleclick.net">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="/assets/website/css/clashagent/css2.css" rel="stylesheet">
+    <link href="/assets/website/css/clashagent/all.min.css" rel="stylesheet">
+    <link href="/assets/website/css/clashagent/bootstrap-icons.css" rel="stylesheet">
+    <link href="/assets/website/css/clashagent/animate.min.css" rel="stylesheet">
+    <link href="/assets/website/css/clashagent/owl.carousel.min.css" rel="stylesheet">
+    <link href="/assets/website/css/clashagent/tempusdominus-bootstrap-4.min.css" rel="stylesheet">
+    <link href="/assets/website/css/clashagent/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/website/css/clashagent/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/website/css/G.css" />
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G7R1BJKJER"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-G7R1BJKJER');
+</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3332997411212854"
+     crossorigin="anonymous"></script>
+</head>
+
+<body data-page="detail">
+    <div class="container-xxl bg-white p-0">
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <div class="container-xxl position-relative p-0">
+                        <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
+                <a href="/" class="navbar-brand p-0 xcblog-blog-logo">
+                                        <span class="text-primary m-0">VPN教程</span>
+                                    </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0 pe-4">
+                                                <a href="/" class="nav-item nav-link">首页</a>
+                                                <a href="/paid-subscribe/" class="nav-item nav-link">推荐机场</a>
+                                                <a href="/news/" class="nav-item nav-link">新闻资讯</a>
+                                                <a href="/client.htm" class="nav-item nav-link">客户端</a>
+                                            </div>
+                </div>
+            </nav>
+            <div class="container-xxl py-5 bg-dark hero-header mb-5">
+                <div class="container text-center my-5 pt-5 pb-4">
+                    <h1 class="display-3 text-white mb-3 animated slideInDown">深度解析Shadowrocket分应用功能及使用技巧：优化你的网络体验</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center text-uppercase">
+                            <li class="breadcrumb-item"><a href="/">首页</a></li>
+                            <li class="breadcrumb-item"><a href="/news/">新闻资讯</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">正文</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                                        <input type="hidden" id="share-website-info" data-name="Clash Node官网订阅站" data-url="https://clashnode.github.io">
+                <div class="xcblog-blog-detail xcblog-blog-detail-defined">
+                    
+<p data-start="39" data-end="243" class="">在当今的互联网时代，随着各类信息技术的发展和日益严格的网络监管，越来越多的用户开始寻求能够突破网络限制的工具。Shadowrocket作为一款功能强大的科学上网工具，特别在iOS平台上受到广泛的欢迎。它不仅支持多种协议（如Shadowsocks、VMess等），还具备一个非常实用的功能——分应用代理。这项功能让用户可以针对不同的应用程序设置独立的代理，不仅可以有效提高上网体验，还能节省流量、增强隐私保护。</p>
+<p data-start="245" data-end="312" class="">本文将全面解析Shadowrocket的分应用功能，包括如何设置和优化，帮助你在需要翻墙或保护隐私的情况下，能够更好地管理和使用网络。</p>
+<h2 data-start="314" data-end="333" class="">什么是Shadowrocket？</h2>
+<p data-start="335" data-end="492" class="">Shadowrocket是一款适用于iOS设备的代理工具，主要用于科学上网和突破网络封锁。它支持多种协议，包括Shadowsocks、Vmess、Trojan等，能够有效帮助用户绕过网络审查，实现自由上网。通过Shadowrocket，用户可以将互联网流量通过指定的代理服务器转发，以保证隐私、安全和高速上网体验。</p>
+<h3 data-start="494" data-end="514" class="">Shadowrocket的特点：</h3>
+<ol data-start="515" data-end="767">
+<li data-start="515" data-end="581" class="" style="">
+<p data-start="518" data-end="581" class=""><strong data-start="518" data-end="527">多协议支持</strong>：支持Shadowsocks、VMess、Vless、Trojan等常见的网络协议，灵活应对不同的网络需求。</p>
+</li>
+<li data-start="582" data-end="641" class="" style="">
+<p data-start="585" data-end="641" class=""><strong data-start="585" data-end="596">高度自定义设置</strong>：用户可以根据需求自定义代理规则，选择特定的应用使用代理，其他应用则可以使用本地网络连接。</p>
+</li>
+<li data-start="642" data-end="701" class="" style="">
+<p data-start="645" data-end="701" class=""><strong data-start="645" data-end="654">稳定的连接</strong>：Shadowrocket能够提供稳定的网络连接，减少由于网络封锁和干扰带来的掉线和延迟问题。</p>
+</li>
+<li data-start="702" data-end="767" class="" style="">
+<p data-start="705" data-end="767" class=""><strong data-start="705" data-end="716">支持分应用代理</strong>：这一功能让用户能够为不同的应用程序设置独立的代理，优化网络资源，确保最需要翻墙的应用程序能顺畅运行。</p>
+</li>
+</ol>
+<h2 data-start="769" data-end="794" class="">什么是Shadowrocket的分应用功能？</h2>
+<p data-start="796" data-end="939" class="">分应用功能（App-Specific Proxy）是Shadowrocket的一项核心功能，它允许用户为每个应用程序设置独立的代理服务器。这样，用户可以在不影响其他应用的情况下，指定某些特定的应用使用代理服务器。此功能不仅优化了网络资源的使用，还能帮助用户保护隐私，确保敏感数据的安全。</p>
+<h3 data-start="941" data-end="954" class="">分应用功能的优势：</h3>
+<ol data-start="955" data-end="1175">
+<li data-start="955" data-end="1013" class="" style="">
+<p data-start="958" data-end="1013" class=""><strong data-start="958" data-end="968">提高访问速度</strong>：通过为特定应用程序设置独立代理，用户可以为这些应用选择最佳的代理服务器，确保其访问速度。</p>
+</li>
+<li data-start="1014" data-end="1055" class="" style="">
+<p data-start="1017" data-end="1055" class=""><strong data-start="1017" data-end="1025">节省流量</strong>：不需要翻墙的应用会使用本地网络，从而避免不必要的流量消耗。</p>
+</li>
+<li data-start="1056" data-end="1115" class="" style="">
+<p data-start="1059" data-end="1115" class=""><strong data-start="1059" data-end="1069">增强隐私保护</strong>：只为需要翻墙的应用启用代理，减少了其他应用通过代理转发的数据量，从而降低了信息泄露的风险。</p>
+</li>
+<li data-start="1116" data-end="1175" class="" style="">
+<p data-start="1119" data-end="1175" class=""><strong data-start="1119" data-end="1129">优化网络使用</strong>：分应用代理让用户能够更精准地控制哪些应用使用代理，避免了全局代理的资源浪费和不必要的干扰。</p>
+</li>
+</ol>
+<h2 data-start="1177" data-end="1203" class="">如何设置Shadowrocket的分应用功能？</h2>
+<p data-start="1205" data-end="1239" class="">设置Shadowrocket的分应用功能非常简单。以下是详细的步骤：</p>
+<h3 data-start="1241" data-end="1266" class="">步骤一：下载并安装Shadowrocket</h3>
+<p data-start="1267" data-end="1311" class="">首先，打开App Store并搜索“Shadowrocket”。下载并安装后，打开应用。</p>
+<h3 data-start="1313" data-end="1328" class="">步骤二：导入服务器配置</h3>
+<p data-start="1329" data-end="1396" class="">打开Shadowrocket应用，点击首页的“配置”按钮，选择“导入配置”选项。你可以通过URL导入配置文件，或是手动添加服务器信息。</p>
+<h3 data-start="1398" data-end="1413" class="">步骤三：设置分应用规则</h3>
+<ol data-start="1414" data-end="1584">
+<li data-start="1414" data-end="1447" class="" style="">
+<p data-start="1417" data-end="1447" class="">在Shadowrocket的主菜单栏中，选择“分应用”选项。</p>
+</li>
+<li data-start="1448" data-end="1500" class="" style="">
+<p data-start="1451" data-end="1500" class="">点击“添加”按钮，选择你希望通过代理访问的应用程序。例如，微信、Twitter、YouTube等。</p>
+</li>
+<li data-start="1501" data-end="1572" class="" style="">
+<p data-start="1504" data-end="1572" class="">对于选定的应用，你可以选择使用全局代理或局部代理。全局代理意味着所有的网络流量都会通过代理服务器，而局部代理只会对特定应用程序启用代理。</p>
+</li>
+<li data-start="1573" data-end="1584" class="" style="">
+<p data-start="1576" data-end="1584" class="">保存设置并返回。</p>
+</li>
+</ol>
+<h3 data-start="1586" data-end="1598" class="">步骤四：启用代理</h3>
+<p data-start="1599" data-end="1662" class="">在应用的主屏幕上，切换代理开关，确保分应用代理已经启用。此时，你的指定应用将通过代理服务器进行访问，而其他应用则使用本地网络。</p>
+<h2 data-start="1664" data-end="1679" class="">分应用功能的常见使用场景</h2>
+<p data-start="1681" data-end="1741" class="">Shadowrocket的分应用功能适用于多种不同的使用场景，帮助用户更加灵活地控制网络流量。以下是一些常见的使用场景：</p>
+<h3 data-start="1743" data-end="1760" class="">1. <strong data-start="1750" data-end="1760">社交媒体应用</strong></h3>
+<p data-start="1761" data-end="1876" class="">许多社交媒体应用在部分地区被封锁或限制访问，Shadowrocket的分应用功能可以帮助用户为这些应用设置代理。例如，使用Twitter或Instagram时，通过指定代理服务器，用户能够绕过网络封锁，实现畅通无阻的社交媒体访问。</p>
+<h3 data-start="1878" data-end="1894" class="">2. <strong data-start="1885" data-end="1894">邮箱客户端</strong></h3>
+<p data-start="1895" data-end="1982" class="">为了保护电子邮件的隐私，许多用户选择通过代理连接到邮件服务器。Shadowrocket允许用户为邮箱客户端设置独立的代理，这样可以保证用户在发送或接收邮件时的安全性和隐私性。</p>
+<h3 data-start="1984" data-end="2001" class="">3. <strong data-start="1991" data-end="2001">在线视频应用</strong></h3>
+<p data-start="2002" data-end="2091" class="">许多在线视频应用（如YouTube、Netflix等）在不同地区的内容提供和访问有所不同。用户可以为这些应用设置专门的代理，确保在地理限制的情况下仍然能够观看自己喜欢的视频内容。</p>
+<h3 data-start="2093" data-end="2108" class="">4. <strong data-start="2100" data-end="2108">游戏应用</strong></h3>
+<p data-start="2109" data-end="2180" class="">一些游戏可能因地区封锁导致无法访问或连接缓慢，Shadowrocket的分应用功能可以为这些游戏设置独立代理，解决连接问题，确保游戏顺利进行。</p>
+<h2 data-start="2182" data-end="2207" class="">如何优化Shadowrocket的网络体验？</h2>
+<h3 data-start="2209" data-end="2230" class="">1. <strong data-start="2216" data-end="2230">选择合适的代理服务器</strong></h3>
+<p data-start="2231" data-end="2331" class="">Shadowrocket支持多种协议（Shadowsocks、VMess、Trojan等），用户可以根据自身需求选择最适合的代理协议和服务器。使用速度较快、延迟较低的服务器可以显著提高网络访问的效率。</p>
+<h3 data-start="2333" data-end="2350" class="">2. <strong data-start="2340" data-end="2350">定期更新节点</strong></h3>
+<p data-start="2351" data-end="2416" class="">由于网络环境的变化，代理服务器的稳定性和速度可能会有所波动。建议定期更新节点，选择连接速度较快且稳定的节点，以保持较高的网络性能。</p>
+<h3 data-start="2418" data-end="2435" class="">3. <strong data-start="2425" data-end="2435">使用测速工具</strong></h3>
+<p data-start="2436" data-end="2503" class="">在选择代理节点时，使用测速工具（如V2Ray测速工具、Speedtest等）定期测试节点的延迟和速度，可以帮助你找到最佳的代理服务器。</p>
+<h3 data-start="2505" data-end="2525" class="">4. <strong data-start="2512" data-end="2525">合理设置分应用规则</strong></h3>
+<p data-start="2526" data-end="2598" class="">根据不同的应用需求，合理设置分应用代理规则。对于需要翻墙的应用程序启用代理，而对于其他常规应用，可以直接使用本地网络，避免不必要的代理流量浪费。</p>
+<h2 data-start="2600" data-end="2614" class="">常见问题解答（FAQ）</h2>
+<h3 data-start="2616" data-end="2639" class="">1. <strong data-start="2623" data-end="2639">如何创建多个分应用环境？</strong></h3>
+<p data-start="2640" data-end="2729" class="">你可以为不同的应用设置独立的代理规则，只需在Shadowrocket的“分应用”设置中多次添加应用程序即可创建不同的环境。每个应用的代理规则都是独立的，可以根据实际需求灵活切换。</p>
+<h3 data-start="2731" data-end="2762" class="">2. <strong data-start="2738" data-end="2762">Shadowrocket能支持哪些协议？</strong></h3>
+<p data-start="2763" data-end="2834" class="">Shadowrocket支持多种协议，包括Shadowsocks、VMess、Vless、Trojan等，用户可以根据网络需求选择合适的协议。</p>
+<h3 data-start="2836" data-end="2876" class="">3. <strong data-start="2843" data-end="2876">使用Shadowrocket分应用是否会影响手机电池使用？</strong></h3>
+<p data-start="2877" data-end="2967" class="">使用Shadowrocket分应用本身不会显著增加电池耗损，但持续运行多个应用程序并通过代理转发数据可能会导致电池消耗加快。为了延长电池续航，建议在不使用代理的情况下关闭代理功能。</p>
+<h3 data-start="2969" data-end="3001" class="">4. <strong data-start="2976" data-end="3001">如何确保安全使用Shadowrocket？</strong></h3>
+<p data-start="3002" data-end="3070" class="">使用Shadowrocket时，建议选择可靠的服务器并定期更新节点。此外，在设置分应用代理时，要确保选择的应用符合安全和隐私保护的需求。</p>
+<h2 data-start="3072" data-end="3077" class="">总结</h2>
+<p data-start="3079" data-end="3284" class="">Shadowrocket的分应用功能为用户提供了极大的便利，让网络访问更加灵活、安全。通过合理配置代理规则，用户不仅能够优化网络资源，还能提高隐私保护，确保敏感数据的安全性。无论是社交媒体、邮箱、在线视频还是游戏应用，Shadowrocket都能够提供定制化的网络服务，帮助用户绕过网络封锁，实现顺畅的上网体验。希望通过本文的讲解，你能够充分理解并掌握Shadowrocket的分应用功能，提升自己的网络体验。</p>
+<hr data-start="3286" data-end="3289" class="">
+<h3 data-start="3291" data-end="3298" class="">点评：</h3>
+<p data-start="3300" data-end="3442" class="">这篇文章不仅全面解析了Shadowrocket的分应用功能，还通过清晰的步骤指导帮助读者快速上手，提升了文章的实用性。结合实际应用场景的解释，使得这篇文章对普通用户及进阶用户都具有很高的参考价值。语言简洁明了，概念清晰，特别适合那些希望通过Shadowrocket优化上网体验的读者。</p>                </div>
+                <div class="clearfix"></div>
+                <div class="col-md-12 mt-5">
+                                        <p>上一个：<a href="/news/article-112403.htm">Sony与Clash：音乐与文化的碰撞与融合</a></p>
+                                        <p>下一个：<a href="/news/article-112746.htm">安卓端Clash配置全攻略：一步步带你轻松解锁网络自由</a></p>
+                                    </div>
+                                    </div>
+                    <div class="col-md-3">
+                        <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">热门文章</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2"><a href="/news/article-109767.htm" title="金钥匙V科学上网：在百度云中的全面应用与配置指南">金钥匙V科学上网：在百度云中的全面应用与配置指南</a></li>
+                        <li class="py-2"><a href="/news/article-111459.htm" title="数字时代的隐秘通道：一站式掌握 Clash 全局代理的使用指南">数字时代的隐秘通道：一站式掌握 Clash 全局代理的使用指南</a></li>
+                        <li class="py-2"><a href="/news/article-108113.htm" title="完全指南：如何在美国使用 Shadowrocket 及其 ID 设置">完全指南：如何在美国使用 Shadowrocket 及其 ID 设置</a></li>
+                        <li class="py-2"><a href="/news/article-110643.htm" title="全面指南：如何通过Newifimini支持V2Ray实现安全的网络连接">全面指南：如何通过Newifimini支持V2Ray实现安全的网络连接</a></li>
+                        <li class="py-2"><a href="/news/article-106167.htm" title="深度解析SSR：它真的算是科学上网工具吗？">深度解析SSR：它真的算是科学上网工具吗？</a></li>
+                        <li class="py-2"><a href="/news/article-108120.htm" title="打造家庭网络加速核心：新路由三安装与配置Clash的完整实战指南">打造家庭网络加速核心：新路由三安装与配置Clash的完整实战指南</a></li>
+                        <li class="py-2"><a href="/news/article-107372.htm" title="艾特路由器科学上网全面指南：轻松实现网络自由">艾特路由器科学上网全面指南：轻松实现网络自由</a></li>
+                        <li class="py-2"><a href="/news/article-112744.htm" title="深度解析Shadowrocket分应用功能及使用技巧：优化你的网络体验">深度解析Shadowrocket分应用功能及使用技巧：优化你的网络体验</a></li>
+                        <li class="py-2"><a href="/news/article-103900.htm" title="解锁Pixiv的艺术之门：科学上网访问P站的终极指南（2023版）">解锁Pixiv的艺术之门：科学上网访问P站的终极指南（2023版）</a></li>
+                        <li class="py-2"><a href="/news/article-112402.htm" title="深入解析Shadowrocket超时问题及解决方案">深入解析Shadowrocket超时问题及解决方案</a></li>
+                    </ul>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">归纳</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">14</span> <a href="/date/2025-05/" title="2025-05 归档">2025-05</a></h4>
+            </li>
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">14</span> <a href="/date/2025-04/" title="2025-04 归档">2025-04</a></h4>
+            </li>
+                    </ul>
+    </div>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                                            <p>
+                                                <a href="/">首页</a> |
+                                                <a href="/paid-subscribe/">推荐机场</a> |
+                                                <a href="/news/">新闻资讯</a> |
+                                                <a href="/client.htm">客户端</a> |
+                                                <a href="/about-us.htm">关于我们</a> |
+                        <a href="/disclaimer.htm">免责申明</a> |
+                        <a href="/privacy.htm">隐私申明</a> |
+                        <a href="/sitemap.xml">网站地图</a>
+                    </p>
+                        <p class="text-white-50 f-15 mb-0">
+                            <a href="/">VPN教程订阅中文网</a> 版权所有 Powered by WordPress
+                        </p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="/">Home</a>
+                            <a href="#">Cookies</a>
+                            <a href="#">Help</a>
+                            <a href="#">FQAs</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <script src="/assets/website/js/frontend/clashagent/jquery-3.6.0.min.js"></script>
+    <script src="/assets/website/js/frontend/clashagent/owl.carousel.min.js"></script>
+    <script src="/assets/website/js/frontend/clashagent/main.js"></script>
+    <script src="/assets/website/js/frontend/clashagent/rocket-loader.min.js"></script>
+    <script src="https://www.freeclashnode.com/assets/js/frontend/invite-url.js"></script>
+    <script src="/assets/website/js/frontend/G.js"></script>
+    </div>
+</body>
+
+</html>
