@@ -1,4 +1,4 @@
-# VPN教程 - 11月7日19.7M/S|免费V2ray节点/Singbox节点/Shadowrocket节点/SSR节点/Clash节点订阅节点连接  更新时间 2025-11-07 07:36:39
+# VPN教程 - 11月13日18.4M/S|免费V2ray节点/Singbox节点/Shadowrocket节点/Clash节点/SSR节点订阅节点连接  更新时间 2025-11-13 11:00:05
 所有免费clash节点都爬取自网络，请勿用于非法用途 。节点地址：<a href="https://vpntutorial.github.io" target="_blank">点击跳转</a>
 
 ## clash使用教程：
@@ -9,23 +9,23 @@
 
 ### 免费Clash节点订阅链接
 
-- https://vpntutorial.github.io/uploads/2025/11/0-20251107.yaml
-- https://vpntutorial.github.io/uploads/2025/11/1-20251107.yaml
-- https://vpntutorial.github.io/uploads/2025/11/2-20251107.yaml
-- https://vpntutorial.github.io/uploads/2025/11/3-20251107.yaml
-- https://vpntutorial.github.io/uploads/2025/11/4-20251107.yaml
+- https://vpntutorial.github.io/uploads/2025/11/0-20251113.yaml
+- https://vpntutorial.github.io/uploads/2025/11/1-20251113.yaml
+- https://vpntutorial.github.io/uploads/2025/11/2-20251113.yaml
+- https://vpntutorial.github.io/uploads/2025/11/3-20251113.yaml
+- https://vpntutorial.github.io/uploads/2025/11/4-20251113.yaml
 
 ### 免费V2ray节点订阅链接
 
-- https://vpntutorial.github.io/uploads/2025/11/0-20251107.txt
-- https://vpntutorial.github.io/uploads/2025/11/1-20251107.txt
-- https://vpntutorial.github.io/uploads/2025/11/2-20251107.txt
-- https://vpntutorial.github.io/uploads/2025/11/3-20251107.txt
-- https://vpntutorial.github.io/uploads/2025/11/4-20251107.txt
+- https://vpntutorial.github.io/uploads/2025/11/0-20251113.txt
+- https://vpntutorial.github.io/uploads/2025/11/1-20251113.txt
+- https://vpntutorial.github.io/uploads/2025/11/2-20251113.txt
+- https://vpntutorial.github.io/uploads/2025/11/3-20251113.txt
+- https://vpntutorial.github.io/uploads/2025/11/4-20251113.txt
 
 ### 免费Sing-box节点订阅链接
 
-- https://vpntutorial.github.io/uploads/2025/11/20251107.json
+- https://vpntutorial.github.io/uploads/2025/11/20251113.json
 
 ## 更多Clash节点订阅 ：
 
